@@ -1,0 +1,38 @@
+<!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-subheading text-muted">Pine Gum Studio sprouted in 2018.</h3>
+                </div>
+            </div>
+            <div class="row">
+                {% for member in site.people %}
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
+                        <h4>{{ member.name }}</h4>
+                        <p class="text-muted">{{ member.position }}</p>
+                        <ul class="list-inline social-buttons">
+                            {% for network in member.social %}
+                            <li>
+                                <a href="{{ network.url }}">
+                                    <i class="fa fa-{{ network.title }}"></i>
+                                </a>
+                            </li>
+                            {% endfor %}
+
+                        </ul>
+                    </div>
+                </div>
+                {% endfor %}
+            <!--</div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">-->
+                <div class="col-lg-8 text-center">
+                    <p class="large text-muted" style="margin-top:30px;">Melissa Hammell's great-grandmother was a medicine woman from Kitigan Zibi First Nation.  Melissa has been active in the indigenous community.  She was a member in a native women's drum group.  With the Wabano Centre for Aboriginal Health, Melissa held various positions from team lead to director over a period of 10 years before starting Pine Gum Studio.  She is Vice-President of the Board of Directors for the Tewegan Housing for Aboriginal Youth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
