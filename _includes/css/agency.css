@@ -81,7 +81,7 @@ h6 {
 .open .dropdown-toggle.btn-primary {
     border-color: #{{ site.data.template.color.primary }};
     color: #fff;
-    background-color: #{{ site.data.template.color.secondary }};
+    background-color: #{{ site.data.template.color.secondary-dark }};
 }
 
 .btn-primary:active,
@@ -133,7 +133,7 @@ fieldset[disabled] .btn-primary.active {
 .open .dropdown-toggle.btn-xl {
     border-color: #{{ site.data.template.color.primary }};
     color: #fff;
-    background-color: #{{ site.data.template.color.secondary }};
+    background-color: #{{ site.data.template.color.secondary-dark }};
 }
 
 .btn-xl:active,
@@ -189,7 +189,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle {
     border-color: #{{ site.data.template.color.primary }};
-    background-color: #{{ site.data.template.color.secondary }};
+    background-color: #{{ site.data.template.color.secondary-dark }};
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -198,7 +198,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #{{ site.data.template.color.secondary }};
+    background-color: #{{ site.data.template.color.secondary-dark }};
 }
 
 .navbar-default .nav li a {
@@ -221,13 +221,13 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #000;
-    background-color: #{{ site.data.template.color.secondary }};
+    background-color: #{{ site.data.template.color.secondary-dark }};
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #000;
-    background-color: #{{ site.data.template.color.secondary }};
+    background-color: #{{ site.data.template.color.secondary-dark }};
 }
 
 @media(min-width:768px) {
@@ -260,7 +260,8 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #{{ site.data.template.color.secondary-light }};
+        background-color: #{{ site.data.template.color.secondary }};
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) 0 6px 20px 0 rgba(0,0,0,0.19);
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -282,7 +283,7 @@ header {
 }
 
 header .intro-text {
-    padding-top: 100px;
+    padding-top: 350px;
     padding-bottom: 50px;
 }
 
@@ -304,13 +305,13 @@ header .intro-text .intro-heading {
     color: #000;
     line-height: 50px;
     padding: 50px;
-    border: 10px solid #000;
-    background-color: #{{ site.data.template.color.secondary }};
+    /*border: 10px solid #000;
+    background-color: #{{ site.data.template.color.secondary }};*/
 }
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
+        padding-top: 600px;
         padding-bottom: 200px;
     }
 
@@ -671,13 +672,15 @@ section#about {
 
 section#contact {
     background-color: #222;
-    background-image: url('{{ site.baseurl }}/img/map-image.png');
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url('{{ site.baseurl }}/img/footer-bg.jpg');
+    /*background-position: center;
+    background-repeat: no-repeat;*/
+    background-size: cover;
 }
 
 section#contact .section-heading {
-    color: #000;
+    color: white;
+    text-shadow: 2px 2px 4px black;
 }
 
 section#contact .form-group {
