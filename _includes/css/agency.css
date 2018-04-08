@@ -215,18 +215,18 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #{{ site.data.template.color.primary }};
+    color: #fff;
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #000;
+    color: #fff;
     background-color: #{{ site.data.template.color.secondary-dark }};
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #000;
+    color: #fff;
     background-color: #{{ site.data.template.color.secondary-dark }};
 }
 
@@ -251,8 +251,6 @@ fieldset[disabled] .btn-xl.active {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
-        /*-webkit-transform: translateY(-40%);
-        transform: translateY(-40%);*/
         height: 200px;
         width: auto;
     }
@@ -264,6 +262,7 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default.navbar-shrink {
         padding: 10px 0;
         background-color: #{{ site.data.template.color.secondary }};
+        border-bottom: 2px solid #{{ site.data.template.color.primary }};
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -286,7 +285,6 @@ header {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
 }
 
 header .intro-text {
@@ -673,8 +671,9 @@ aside.clients img {
 }
 
 section#about {
-    /*background-color: #f7f7f7;*/
-    background-color: #{{ site.data.template.color.secondary-light }};
+    background-color: #{{ site.data.template.color.secondary-bg }};
+    background: linear-gradient(#{{ site.data.template.color.secondary-bg }},
+                           #{{ site.data.template.color.secondary-bg-light}}); 
 }
 
 section#contact {
@@ -747,7 +746,7 @@ section#contact .text-danger {
 footer {
     padding: 25px 0;
     text-align: center;
-    background-color: #{{ site.data.template.color.secondary-light }};
+    background-color: #{{ site.data.template.color.secondary-bg }};
 }
 
 footer span.copyright {
