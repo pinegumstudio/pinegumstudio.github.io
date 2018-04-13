@@ -172,8 +172,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #{{ site.data.template.color.primary }};
+    /*font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: #{{ site.data.template.color.primary }};*/
 }
 
 .navbar-default .navbar-brand:hover,
@@ -232,20 +232,27 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand-logo {
-    visibility: hidden;
+    /*visibility: hidden;*/
     height: 50px;
     width: auto;
 }
 
 .navbar-default.navbar-shrink {
-    background-color: #{{ site.data.template.color.secondary }};
-    border-bottom: 2px solid #{{ site.data.template.color.primary }};
+    /*background-color: #{{ site.data.template.color.secondary }};
+    border-bottom: 2px solid #{{ site.data.template.color.primary }};*/
 }
     
 .navbar-default.navbar-shrink .navbar-brand-logo {
-    -webkit-transform: translateY(-35%);
+    /*-webkit-transform: translateY(-35%);
     transform: translateY(-35%);
-    visibility: visible;
+    visibility: visible;*/
+}
+
+.navbar-default .navbar-collapse {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
 }
 
 @media(min-width:768px) {
@@ -260,20 +267,24 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default .navbar-collapse {
         background-color: transparent;
+        position: static;
+        width: 100%;
     }
 
-    .navbar-default .navbar-brand {
-        font-size: 2em;
+    .navbar-brand {
+        /*font-size: 2em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
-        transition: all .3s;
+        transition: all .3s;*/
+        border-color: transparent;
+        background-color: transparent;
     }
 
     .navbar-default .navbar-brand-logo {
         height: 50px;
         width: auto;
-        -webkit-transform: translateY(-40%) translateX(-40%);
-        transform: translateY(-40%) translateX(-40%);
+        /*-webkit-transform: translateX(-40%);
+        transform: translateX(-40%);*/
         visibility: hidden;
     }
 
