@@ -233,7 +233,8 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand-logo {
     /*visibility: hidden;*/
-    height: 50px;
+    padding-top: 15px;
+    height: 40px;
     width: auto;
 }
 
@@ -283,6 +284,7 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default .navbar-brand-logo {
         height: 50px;
         width: auto;
+        padding-top: 5px;
         /*-webkit-transform: translateX(-40%);
         transform: translateX(-40%);*/
         visibility: hidden;
@@ -355,7 +357,7 @@ header .intro-text .intro-heading {
 @media(min-width:768px) {
     header .brand-logo {
         padding-top: 50px;
-        height: 200px;
+        height: 300px;
         width: auto;
     }
 
