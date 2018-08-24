@@ -2,14 +2,12 @@
 # Palette: modified from Canva's In Full Bloom 2
 color:
   primary: 0066ff
-  #primary: 005cb8
   secondary: e51e20
   secondary-dark: 1c4899
-  #secondary-dark: 153672
   secondary-bg: 0066ff
   secondary-bg-light: 8deaf8
   tertiary: 004b02
-  muted: 555
+  muted: 444
 
 # Font Families
 font:
