@@ -1,16 +1,12 @@
 # Color settings (hex-codes without the leading hash-tag)
+# Palette: Canva In Full Bloom 2
 color:
-  #primary: 053e1a
-  primary: 135d2f
-  #secondary: 3ca245
-  #secondary: 209d43
-  secondary: 20b349
-  #secondary-light: 95e29a
-  #secondary-light: 64c66b
-  #secondary-dark: 135d2f
-  secondary-dark: 0f6e33
-  secondary-bg: 51e2f8
+  primary: 005cb8
+  secondary: e51e20
+  secondary-dark: 153672
+  secondary-bg: 005cb8
   secondary-bg-light: 8deaf8
+  tertiary: 004b02
   muted: 555
 
 # Font Families

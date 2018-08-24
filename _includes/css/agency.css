@@ -189,7 +189,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #{{ site.data.template.color.primary }};
+    /*border-color: #{{ site.data.template.color.primary }};*/
     background-color: #{{ site.data.template.color.secondary-dark }};
 }
 
@@ -297,7 +297,7 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default.navbar-shrink {
         padding: 10px 0;
         background-color: #{{ site.data.template.color.secondary }};
-        border-bottom: 2px solid #{{ site.data.template.color.primary }};
+        /*border-bottom: 2px solid #{{ site.data.template.color.primary }};*/
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -312,17 +312,18 @@ fieldset[disabled] .btn-xl.active {
 header {
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
+    background-image: url('{{ site.baseurl }}/img/pinegumstudio_halftree.svg');
+    background-position: center right;
+    background-repeat: no-repeat;
+    /*-webkit-background-size: cover;
+    -moz-background-size: cover;*/
+    background-size: auto 100%;
+    background-color: #{{ site.data.template.color.secondary-dark }};
 }
 
 header .brand-logo {
     padding-top: 25px;
-    height: 125px;
+    height: 200px;
     width: auto;
 }
 
@@ -357,7 +358,7 @@ header .intro-text .intro-heading {
 @media(min-width:768px) {
     header .brand-logo {
         padding-top: 50px;
-        height: 300px;
+        height: 400px;
         width: auto;
     }
 
@@ -447,10 +448,11 @@ section#about {
 
 section#contact {
     background-color: #222;
-    background-image: url('{{ site.baseurl }}/img/footer-bg.jpg');
+    /*background-image: url('{{ site.baseurl }}/img/footer-bg.jpg');*/
     /*background-position: center;
-    background-repeat: no-repeat;*/
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background-color: #{{ site.data.template.color.tertiary }};
 }
 
 section#contact .section-heading {
