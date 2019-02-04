@@ -311,6 +311,8 @@ fieldset[disabled] .btn-xl.active {
 
 header {
     color: #fff;
+    height: 100vh;
+    position: relative;
     background-attachment: scroll;
     background-image: url('{{ site.baseurl }}/img/pinegumstudio_halftree.svg');
     background-position: center right;
@@ -329,8 +331,11 @@ header .brand-logo {
 
 header .intro-text {
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 header .intro-text .intro-lead-in {
@@ -360,12 +365,6 @@ header .intro-text .intro-heading {
         padding-top: 50px;
         height: 400px;
         width: auto;
-    }
-
-    header .intro-text {
-        text-align: center;
-        padding-top: 350px;
-        padding-bottom: 250px;
     }
 
     header .intro-text .intro-lead-in {
